@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f395046c99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- div#header + enter -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/new_logo-removebg-preview.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home </a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,It's me <span>Asmin Shrestha</span> <br> from Kathmandu!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <!-- For image  -->
+                <div class="about-col-2"> <!-- For text -->
+                    <h1 class="sub-title ">About me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deleniti sed eveniet, ad quam
+                        magni? Doloremque cumque quidem voluptatibus veritatis eligendi, soluta libero voluptas adipisci
+                        quaerat, dicta, vitae odit repudiandae?</p>
+                    <div class="tab-title">
+                        <!-- onclick="opentab('Skills')" -- To show the content on clicking the skills menu -->
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- Skills-->
+                        <ul>
+                            <li><span> Video Editing</span> <br>After Effects <br>Nuke <br>Photoshop <br>Adobe
+                                Illustartor</li>
+                            <li><span>Web Development</span><br>HTML <br>CSS <br> JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <!-- Education -->
+                        <ul>
+                            <li><span> 2074</span> <br> SEE from ASBS <br></li>
+                            <li><span>2076</span><br>Plus 2 from LIverpool Int'l College (Physical Science) <br></li>
+                            <li><span>2077-present</span><br> Studying BIT in Bhaktapur Multiple Campus (Fourth Sem)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <!-- Experience -->
+                        <ul>
+                            <li><span> 2078-Present</span> <br> VFX Artist at Godrays Picture <br></li>
+                            <li><span>1 month</span><br>Content Writer at Traveldetails <br></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services------------- -->
+    <div id="services">
+        <div class="conatiner">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Development</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas dolor minima incidunt quibusdam
+                        esse et. Odio, ut. Adipisci explicabo vel id iure animi architecto unde! Maiores consequatur
+                        delectus atque!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <!-- Adding logo from fontawesome.com -->
+                    <i class="fa-regular fa-camera-retro"></i>
+                    <h1>Video Editing</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas dolor minima incidunt quibusdam
+                        esse et. Odio, ut. Adipisci explicabo vel id iure animi architecto unde! Maiores consequatur
+                        delectus atque!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1659764859742.jpg">
+                    <div class="layer">
+                        <h1>Video Editing</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A provident, earum dolores
+                            dignissimos laudantium dicta voluptatibus tenetur excepturi omnis molestiae voluptas ipsa,
+                            nulla corporis. Rerum, illo aspernatur! Perspiciatis, inventore fugit.</p>
+                        <a href="https://youtu.be/X9Fc6CKx2I8"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/1677739875291.jpg">
+                    <div class="layer">
+                        <h1>Video Editing</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim facilis velit esse
+                            perspiciatis veniam, vitae fuga, dicta beatae corporis voluptates quod labore dolor harum
+                            eum ipsum nam tempora aliquid.</p>
+                        <a href="https://youtu.be/XTG4ry3bmXo"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---------------Contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>asmin.sth135@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9861362710</p>
+                    <div class="social-icons">
+                        <!-- For Social media icons -->
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCD2A47uy4ps0MKN6yVXri6A"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <!-- ----------Download CV---------- -->
+                    <a href="images/1677739875339.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <!-- For Form -->
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>Copyright<i class="fa-sharp fa-regular fa-copyright"></i> <i class="fa-sharp fa-solid fa-a"></i>smin Shrestha</p>
+        </div>
+    </div>
+
+<!-- -------For Java Script------ -->
+
+    <script>
+        // script tag for adding Java Script//
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link"); /*It will remove the active class*/
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab"); /*It will hide the content of active class*/
+            }
+            /* TO display the content of clicked item/menu*/
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab"); /* Get the Clicked tab and shows the contents of active tab*/
+        }
+    </script>
+    <script>
+        var sidemeu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3iVI8Z1jYZy5pe2gFaY3fW5hn5Asnx3y0Vm6rPigTcoAFfeChXfl1H43LUJaZZZX6xA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully" /*displying msg continuously after msg has been sent*/
+                setTimeout(function(){  /*Setting time 5s i.e 5000ms for displaying the text after form submission*/
+                    msg.innerHTML = ""
+                },5000) 
+                form.reset() /*Resetting The form data i.e input field*/
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
